@@ -1,4 +1,12 @@
 // burn it
+// FREEEEEEEEE BIRDDDDDDDDDDDDD
+
+window.onkeypress = function(){
+ var text_input = document.getElementsByName("term")[0];
+ text_input.focus();
+}
+
+
 
 var sh = document.getElementById("sh");
 sh.innerHTML = ps1();
