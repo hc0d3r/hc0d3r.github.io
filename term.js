@@ -94,10 +94,16 @@ function command(){
         y.innerHTML += x + "<br/>";
 
         if(x == "whoami"){
-                y.innerHTML += "Name: MMxM<br/>Age: 540y<br/>Email: suco@defruta.com<br/>profissão: ceo na empresa dolly<br/>Twitter: @hc0d3r<br/>";
-        } else if(x == "clear"){
+                y.innerHTML += "Name: MMxM<br/>Age: 540y<br/>profissão: ...<br/>Twitter: @hc0d3r<br/>";
+        }
+
+	else if(x == "clear"){
                 y.innerHTML = "";
         }
+
+	else if(x == "tree"){
+		y.innerHTML += "oi<br/>";
+	}
 
         else if(x == "help"){
                 y.innerHTML += "available commands: ls, tree, cat, pwd, cd, whoami, id, exit<br/>";
