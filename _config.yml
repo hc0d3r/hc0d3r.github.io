@@ -12,6 +12,7 @@ email: your-email@domain.com
 description: Just another useless web
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hc0d3r.github.io" # the base hostname & protocol for your site
+gems: ['jekyll-gist']
 twitter_username: hc0d3r
 github_username:  hc0d3r
 
