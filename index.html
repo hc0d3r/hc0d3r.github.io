@@ -1,23 +1,20 @@
 ---
 layout: default
 ---
+<article>
+<h1 class='post-title'>Hello World</h1>
+<p>Nesse blog eu publico meus textos, códigos, pensamentos, ideias, entre outras coisas, voltadas para o mundo da informatica (ou não)</p>
 
-<div class="home">
+<h1 class='post-title'>Posts Recentes</h1>
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<ul class='posts'>
+{% for post in site.posts limit:5 %}
 
-</div>
+<li><div id='data'>{{ post.date | date_to_string }}</div> - <a href="{{ post.url }}"><b>{{ post.title }}</b></a></li>
+
+{% endfor %}
+</ul>
+</article>
