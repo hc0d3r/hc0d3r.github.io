@@ -1,30 +1,23 @@
-<html>
- <head>
-  <meta charset="UTF-8">
-  <title>./_\/|\/|\/|\/|\/|\/_\.</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="config.js"></script>
- </head>
- <body>
+---
+layout: default
+---
 
- <div id="terminal">
-<div id="xterm">
-<pre>
- __________________
-< hc0d3r.github.io >
- ------------------
-   \
-    \
-        .--.
-       |o_o |
-       |:_/ |
-      //   \ \
-     (|     | )
-    /'\_   _/`\
-    \___)=(___/
-</pre>
-<div id="sh"></div></div><input type="text" name="term" onkeypress="check_key(event)" size="50" spellcheck="false" autofocus></input>
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>
-<script src="term.js"></script>
- </body>
-</html>
