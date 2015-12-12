@@ -5,13 +5,10 @@ layout: default
 <h1 class='post-title'>Hello World</h1>
 <p>Nesse blog eu publico meus textos, códigos, pensamentos, ideias, entre outras coisas, voltadas para o mundo da informatica (ou não)</p>
 
-<h1 class='post-title'>Postagens Recentes</h1>
-
-
-
+<h1 class='post-title'>Últimas Postagens</h1>
 
 <ul class='posts'>
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit: 5 %}
 
 <li><div id='data'>{{ post.date | date_to_string }}</div> - <a href="{{ post.url }}"><b>{{ post.title }}</b></a></li>
 
