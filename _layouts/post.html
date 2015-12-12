@@ -7,4 +7,12 @@ layout: default
 
     {{ content }}
 
+	{% if page.comments %}
+
+		{% include disqus.html %}
+
+
+	{% endif %}
+
+
 </article>
