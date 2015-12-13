@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quem eu sou ?
+title: Quem sou eu ?
 permalink: /whoami/
 ---
 
