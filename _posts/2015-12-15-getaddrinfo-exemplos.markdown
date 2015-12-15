@@ -1,6 +1,6 @@
 ---
 layout: post
-comments: false
+comments: true
 title: "exemplos de como usar a função getaddrinfo"
 ---
 
