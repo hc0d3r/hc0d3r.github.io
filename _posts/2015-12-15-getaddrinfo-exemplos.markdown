@@ -100,7 +100,7 @@ int main(int argc, char *argv[]){
 
 Compilando e testando:
 
-{% highlight plain  %}
+{% highlight bash %}
 $ gcc gethostbyname.c -Wall -Wextra -o ghbn
 $ ./ghbn localhost
 Hostname solved:
@@ -172,7 +172,7 @@ int main(int argc, char *argv[]){
 
 Compilando e testando:
 
-{% highlight plain  %}
+{% highlight bash %}
 $ gcc getaddrinfo.c -Wall -Wextra -o gai
 $ ./gai localhost
 Hostname solved:
