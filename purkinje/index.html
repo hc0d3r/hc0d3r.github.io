@@ -1,0 +1,37 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Purkinje</title>
+  <style>
+body {
+	font-family: monospace;
+}
+  </style>
+ </head>
+ <body>
+
+<h1>As luzes de Purkinje | Purkije Lights</h1>
+
+<b><font color='red'>PERIGO</font>: pode causar ataque epiléptico</b><br/>
+<b><font color='red'>WARNING</font>: can cause epileptic seizures</b><br/><br/>
+- Deixe o brilho do monitor no maximo, aperte iniciar, aproxime-se do monitor, feche os olhos e tenha alucinações ? -<br/>
+<br/>
+<button onclick="start_this_shit();">iniciar</button>
+ </body>
+
+
+<script>
+
+function start_this_shit(){
+	document.body.innerHTML = '';
+	check = '#000';
+
+	window.setInterval(function(){
+		document.body.style.backgroundColor = check;
+		check = (check == '#000' ? '#fff' : '#000')
+	}, 10);
+}
+
+</script>
+
+</html>
