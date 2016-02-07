@@ -71,7 +71,8 @@ header {
 
 
 .attribuition {
- box-shadow: 0px 0px 5px #222;
+ /*box-shadow: 0px 0px 5px #222;*/
+ box-shadow: 0px 2px 5px 0px #222, 0px 0px 0px 0px white, 0px 0px 0px 0px white,0px 0px 0px 0px white;
  background-color: #222;
  text-align: center;
  margin: 0 auto;
