@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "exemplos de como usar a função getaddrinfo"
+title: "Exemplos de como usar a função getaddrinfo"
 ---
 
 Se você ler a documentação da função **gethostbyname** (man gethostbyname), no primeiro paragrafo da sessão DESCRIPTION, tem um aviso,
