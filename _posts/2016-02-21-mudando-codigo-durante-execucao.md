@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Mudando código durante execução"
+title: "Mudando código durante execução usando o gdb"
 ---
 
 Mudar uma instrução asm durante a execução de um programa não é algo tão complicado
