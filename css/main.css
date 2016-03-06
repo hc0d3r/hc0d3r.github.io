@@ -135,6 +135,10 @@ p {
  margin-bottom: 15px;
 }
 
+.main p {
+	line-height: 1.4;
+}
+
 a {
 	color: darkgreen;
 }
