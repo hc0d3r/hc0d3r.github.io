@@ -167,7 +167,7 @@ $ ./memdump self '[stack]' | strings | grep stack
 ## Referências
 <br/>
 [1] kernel - How do I read from /proc/$pid/mem under Linux? - Unix & Linux Stack Exchange (Acessado em Março/2016)<br/>
-<http://unix.stackexchange.com/questions/6301/how-do-i-read-from-proc-pid-mem-under-linux>
+<http://unix.stackexchange.com/questions/6301/how-do-i-read-from-proc-pid-mem-under-linux>   
 [2] proc(5): process info pseudo-file system - Linux man page (Acessado em Março/2016)  
 <http://linux.die.net/man/5/proc>  
 
