@@ -40,7 +40,7 @@ para setar a posição do arquivo, que precisa ser um valor dentro do range dos 
 
 Exemplo: 0040-0050, o offset deve ser um valor entre 0x40 e 0x50, suponhamos que você escolha o valor 0x45, então voce poderia ler, no máximo, 11 bytes (0x50 - 0x45).
 
-##PoC Hour
+## PoC Hour
 <br/>
 Para ler a memória de processos diferentes do seu processo principal é necessario usar **ptrace**.
 
@@ -164,7 +164,7 @@ $ ./memdump self '[stack]' | strings | grep stack
 {% endhighlight %}
 
 
-#Referências
+## Referências
 <br/>
 [1] kernel - How do I read from /proc/$pid/mem under Linux? - Unix & Linux Stack Exchange (Acessado em Março/2016)<br/>
 <http://unix.stackexchange.com/questions/6301/how-do-i-read-from-proc-pid-mem-under-linux>
