@@ -13,7 +13,7 @@ A primeira constelação que eu consegui identificar foi o cruzeiro do sul, e po
 depois de muitos anos o meu interesse por querer saber quais constelações eu poderia ver de noite, me levou
 ao **stellarium**, esse programa é foda, vc coloca a latitude, longitude e altitude, e ele mostra as estrelas e planetas
 que estão possivelmente visiveis, primeiro eu comecei identificando planetas, como marte, venus e jupiter,
-pois são mais facies de localizar, venus por exemplo é a "estrela" mais brilhante do ceu, tbm chamado de estrela dalva, e lucifer,
+pois são mais facies de localizar, venus por exemplo é a "estrela" mais brilhante do ceu, tbm chamado de estrela dalva,
 marte é uma estrela vermelha e jupiter tbm brilha muito.
 
 Com o passar do tempo conseguir identificar constelaçoes como orion, cão menor, touro,  e outras mais, se não fossem as malditas luzes laranjas dos postes de luz,
