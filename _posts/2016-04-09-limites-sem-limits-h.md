@@ -4,7 +4,7 @@ comments: true
 title: "Limites sem limits.h"
 ---
 
-Dependendo do sistema e opções definidas durante a compilação de um programa alguns tipos de dados
+Dependendo do sistema e opções definidas quando se compila um programa, alguns tipos de dados
 podem ter tamanhos diferentes, um exemplo:
 
 {% highlight text %}
