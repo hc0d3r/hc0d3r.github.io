@@ -202,7 +202,7 @@ pra desativar nx-bit que faz com q a stack não seja executavel (proteção cont
 {% highlight text %}
 $ gcc inject-stack.c 
 $ ./a.out
-Falha de PROT_READ | PROT_WRITEsegmentação (imagem do núcleo gravada)
+Falha de segmentação (imagem do núcleo gravada)
 $ gcc inject-stack.c -z execstack
 $ ./a.out
 -- codigos mutaveis --
