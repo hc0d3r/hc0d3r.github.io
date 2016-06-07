@@ -33,7 +33,9 @@ dele, pode arrumar uma dor de cabeça no futuro, como o mal funcionamento do sis
 e com certeza ele não vai querer isso, já que o trabalho dele é só prestar consultaria.
 
 Pra demonstrar como uma extensão maliciosa pode ser criada peguei o exemplo no site [zend developer zone](http://devzone.zend.com/303/extension-writing-part-i-introduction-to-php-and-zend/),
-e com poucas modificações ele agora faz conexão reversa em 0.0.0.0 na porta 1337 e disponibiliza uma shell:
+e com poucas modificações ele agora faz conexão reversa em 0.0.0.0 na porta 1337 e disponibiliza uma shell.
+
+**Código >>**
 
 {% gist 0d33f7ef165d74abe8ff745b01141c35 %}
 
@@ -49,8 +51,9 @@ e com poucas modificações ele agora faz conexão reversa em 0.0.0.0 na porta 1
 
 **testando >>**
 
+<center>
 <script type="text/javascript" src="https://asciinema.org/a/48157.js" id="asciicast-48157" async></script>
-
+</center>
 
 
 \_\_EOF\_\_
