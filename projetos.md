@@ -10,3 +10,4 @@ Lista de alguns dos meus projetos no github:
 * [Kadimus](https://github.com/P0cl4bs/Kadimus) - Uma ferramenta pra scannear e explorar sites vulneraveis a lfi, feito em C
 * [Thanos](https://github.com/P0cL4bs/Thanos) - Banner Grabber feito em C
 * [Ignotum](https://github.com/hc0d3r/ignotum) - Lib pra ajudar a ler memoria de processos no linux
+* [ps-inject](https://github.com/hc0d3r/ps-inject) - Injeta shellcode em processos no linux
