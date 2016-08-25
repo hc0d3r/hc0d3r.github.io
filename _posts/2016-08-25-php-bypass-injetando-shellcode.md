@@ -71,6 +71,4 @@ lib que foi sobrescrita, BOOM, vai executar o shellcode.
 
 ?>
 {% endhighlight %}
-<center>
 <script type="text/javascript" src="https://asciinema.org/a/83869.js" id="asciicast-83869" async></script>
-</center>
