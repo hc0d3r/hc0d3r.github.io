@@ -433,6 +433,86 @@ $ ./inject-proc-mem
 -- codigos mutaveis --
 {% endhighlight %}
 
+## Usando ptrace
+
+{% highlight c %}
+#include <sys/ptrace.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <signal.h>
+#include <string.h>
+#include <stdlib.h>
+
+
+#define wordsize sizeof(long)
+
+/* void xorcript(void *input, void *key, void *output, size_t input_size, size_t key_size) */
+
+unsigned const char cript[]=
+    "\x3e\x29\xe4\x80\x20\xd9\x40\x48"
+    "\x48\x02\x04\x05\x04\x02\x20\xe8"
+    "\x28\x85\x20\xd9\x04\x12\x4d\x08"
+    "\x1d\x15\x0c\x13\x20\xe8\x2e\x89"
+    "\x25\xdd\x0d\x08\x1e\x45\x45\x4c"
+    "\x61\x61\x25\xec\x2d\x91\xd5\x64"
+    "\x68\x61\x6b\xde\x6c\x65\x68\x61"
+    "\x25\xe8\x1d\x81\xd1\x76\x6d\x65"
+    "\x68\x6e\x68\x38\xab";
+
+void ptrace_write(pid_t pid, long addr, const void *data, size_t len){
+    size_t i;
+    long word, old;
+    int final_size;
+
+    for(i=0; i<len; i+=wordsize){
+        if((i+wordsize) > len){
+            final_size = len-i;
+            word = 0;
+
+            memcpy(&word, data+i, final_size);
+            old = ptrace(PTRACE_PEEKDATA, pid, addr+i, 0L);
+            old &= (unsigned long)-1 << (8*final_size);
+            word |= old;
+            ptrace(PTRACE_POKEDATA, pid, addr+i, word);
+
+        } else {
+            word = *(long *)(data+i);
+            ptrace(PTRACE_POKEDATA, pid, addr+i, word);
+        }
+    }
+
+}
+
+int main(void){
+    unsigned char sc[sizeof(cript)-1];
+    pid_t child;
+    child = fork();
+
+    if(child == 0){
+        ptrace(PTRACE_TRACEME, 0L, 0L, 0L);
+        kill(getpid(), SIGSTOP);
+
+        asm volatile("call cript");
+        exit(0);
+    }
+
+    waitpid(child, NULL, 0);
+    xorcript((void *)cript, "kamehameha", sc, sizeof(cript)-1, 10);
+    ptrace_write(child, (long)cript, sc, sizeof(cript)-1);
+
+    return 0;
+}
+{% endhighlight %}
+
+{% highlight text %}
+$ gcc inject-ptrace.c -o inject-ptrace -Wall -Wextra
+$ ./inject-ptrace
+-- codigos mutaveis --
+{% endhighlight %}
+
+
 ## Finish
 
 Acho que depois de estudar (man elf) vou tentar criar um cripter, se a preguiça deixar eu acabo de fazer minha lib pra hack de jogos também, se alguem tiver alguma
