@@ -37,7 +37,7 @@ write(0, NULL, 0 <unfinished ...>
 {% endhighlight %}
 
 ele verifica que o elf é x86_64, e ai cada syscall ele vai
-printar como se fosse referente a 64 bits, o que não é verdade,
+printar como se fosse referente à 64 bits, o que não é verdade,
 o programa so vai dar exit, mesmo assim ele vai printar como write.
 
 Outro exemplo foi usando o programa maybe, envie um [issue](https://github.com/p-e-w/maybe/issues/35) pra lá,
