@@ -1,0 +1,10 @@
+---
+layout: default
+title: hc0d3r - *cool slogan here*
+---
+<div class="posts">
+ <p>--[ <b>Posts</b></p>
+  {% for post in site.posts %}
+    <p>[{{ post.date | date: "%d/%m/%Y" }}] - <a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+</div>

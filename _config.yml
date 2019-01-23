@@ -1,0 +1,9 @@
+title: hc0d3r
+markdown: kramdown
+description: just another useless web
+url: https://hc0d3r.github.io
+plugins:
+  - jekyll-feed
+author:
+  twitter: hc0d3r
+theme: null
