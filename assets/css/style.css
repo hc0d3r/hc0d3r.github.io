@@ -27,14 +27,13 @@ body {
 }
 
 .header {
-  background-color: ;
   padding: 20px 0;
+  margin: 0 10px;
 }
 
 .center {
   max-width: 750px;
   margin: 0 auto;
-  background-color: ;
   min-height: 100%;
 }
 
@@ -55,7 +54,7 @@ body {
 }
 
 .posts {
-  margin: 10px 0;
+  margin: 10px;
 }
 
 img {
@@ -348,4 +347,3 @@ code.highlighter-rouge {
  padding: 1px 1px;
  margin: 1px 1px;
 }
-
