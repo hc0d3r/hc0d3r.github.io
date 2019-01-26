@@ -59,7 +59,9 @@ body {
 
 img {
   max-width: 100%;
-  margin: 0 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
 }
 
@@ -342,9 +344,14 @@ pre > code {
 }
 
 code.highlighter-rouge {
- background-color: grey;
- color: black;
+ background-color:  #4e5553;
+ color: white;
  padding: 1px 1px;
  margin: 1px 1px;
  white-space: pre;
 }
+
+ul {
+ padding-inline-start: 40px;
+}
+
