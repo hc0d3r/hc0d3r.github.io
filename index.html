@@ -4,7 +4,7 @@ title: hc0d3r - *cool slogan here*
 ---
 <div class="contact">
  <p>--[ <b>Contato</b></p>
-twitter: @hc0d3r
+ <p>email: <span id="xmail"><a href="#" id="email">mostrar/unhide</a></span></p>
 </div>
 <div class="posts">
  <p>--[ <b>Posts</b></p>
@@ -12,3 +12,16 @@ twitter: @hc0d3r
     <p>[{{ post.date | date: "%d/%m/%Y" }}] - <a href="{{ post.url }}">{{ post.title }}</a></p>
   {% endfor %}
 </div>
+<script>
+document.getElementById("email").onclick = function(e){    
+    var email='rrjijnwtx9:5Elrfnq3htr'; 
+    var decrypt=''; 
+
+    for(var i=0; i<email.length; i++){ 
+        decrypt += String.fromCharCode(email.charCodeAt(i) - 5);   
+    }
+
+    document.getElementById("xmail").innerHTML = decrypt;  
+    return false;  
+}
+</script>
