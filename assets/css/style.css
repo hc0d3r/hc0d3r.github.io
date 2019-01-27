@@ -26,10 +26,6 @@ body {
   color: black;
 }
 
-.header {
-  padding: 20px 0;
-  margin: 0 10px;
-}
 
 .center {
   max-width: 750px;
@@ -52,9 +48,11 @@ body {
 .ascii-checkbox input:checked + span:after {
  content: "x";
 }
+.header {
+}
 
-.posts {
-  margin: 10px;
+.header, .posts, .contact {
+  margin: 25px 10px;
 }
 
 img {
