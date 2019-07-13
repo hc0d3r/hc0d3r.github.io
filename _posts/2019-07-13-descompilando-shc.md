@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Descompilando binarios gerados pelo SHC
+title: Descompilando binários gerados pelo SHC
 ---
 
 # Descompilando binários gerados pelo SHC
