@@ -99,11 +99,11 @@ footer {
  */
 .highlight {
   background: #1b1d1e;
-  padding: 5px;
 }
 
 pre > code {
  color: white;
+ padding: 10px;
 }
 
 .highlight pre {
