@@ -90,6 +90,10 @@ h1 {
  color: black;
 }
 
+footer {
+    margin-top: 200px;
+}
+
 /**
  * Syntax highlighting styles
  */
