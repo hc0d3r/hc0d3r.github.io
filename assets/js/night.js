@@ -32,7 +32,7 @@ function change(opt){
   if(opt)
     s = {bg: '#303030', color: 'white', class: 'nlink'};
   else
-    s = {bg: 'white', color: 'black', class: ''};
+    s = {bg: '#fafbfc', color: 'black', class: ''};
 
   document.body.style.backgroundColor = s.bg;
   document.body.style.color = s.color;
